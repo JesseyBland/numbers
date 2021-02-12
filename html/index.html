@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+</head>
+<body>
+<div>
+  <!-- <form  method="POST" action="/headers">
+        
+      <label>Enter Number 0-9999 </label><input name="number" id="textfield" type="number" value="" />
+      <input type="submit" value="submit" id="button" />
+  </form> -->
+  <!-- <script>
+        fetch('http://localhost:9000/headers')
+        .then(response => response.json())
+        .then(data => console.log(data));
+  
+    </script> -->
+    <input  id="gist" cols="8" rows="1" type="number" min="0" max="9999">
+    </input>
+    <p><button>Submit</button></p>
+    <div id="output" class="output">
+        <div id="content"></div>
+        <div id="status"></div>
+        <pre id="log"><textarea id=text cols=40 rows="10">
+
+        </textarea>
+      </pre>
+      </div>
+</div>
+<div>
+    <script>
+    
+        function fuckme(){
+            fetch("/headers", {
+            headers: {
+             "Content-Type": "application/x-www-form-urlencoded",
+                 },
+            method: "post",
+            body: document.getElementById("gist").value,
+                }).then(response =>response.text()).then(data =>document.getElementById("text").value=data);
+              }
+            
+
+    
+            var submitBtn = document.querySelector('button');
+            submitBtn.addEventListener('click', fuckme);
+    
+
+    </script>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+
+		f, _ := os.Create("./test.html")
+		w := bufio.NewWriter(f)
+
+		_, _ = w.WriteString(html.UnescapeString("&#128585"))
+		// n5, _ := w.WriteRune(rune('😀'))
+		fmt.Printf(html.UnescapeString("&#128585"))
+		w.Flush()

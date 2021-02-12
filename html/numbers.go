@@ -1,55 +1,20 @@
 package main
 
 import (
-	"fmt"
-	"os"
 	"strconv"
-	"strings"
 )
 
-func main() {
-	var number int
-	argleng := (len(os.Args))
-	bad := "Error"
-	good := "Success"
-	resp := "Please enter a number 0-9999"
-	// arg := os.Args
-	if argleng < 2 {
-		// number = 10000
-		// for number < 0 || number > 9999 {
-		// 	fmt.Println(resp)
-		// 	fmt.Scan(&number)
-		// 	if number < 0 || number > 9999 {
-		// 		fmt.Println(bad)
-		// 	}
-		// }
+func numbers(number int) string {
 
-		fmt.Println("\n\nHelp Using SNUM COMMAND")
-		fmt.Println("$ snum <number 0-9999>" + "+ <d> optional debug\n")
-	} else {
-		catarg := strings.Join(os.Args[1:2], "")
-
-		i, err := strconv.Atoi(catarg)
-		number = i
-		if err != nil || number < 0 || number > 9999 {
-
-			for number < 0 || number > 9999 {
-				fmt.Println(resp)
-				fmt.Scan(&number)
-				if number < 0 || number > 9999 {
-					fmt.Println(bad)
-				}
-			}
-		}
-	}
+	// bad := "Error"
+	// good := "Success"
+	// resp := "Please enter a number 0-9999"
 
 	var n1000 string
 	var n100 string
 	var n10 string
 	var n1 string
-
 	t := strconv.Itoa(number)
-
 	if number < 1000 && number > 99 {
 		n1000 = "0"
 		n100 = string(t[0])
@@ -194,30 +159,21 @@ func main() {
 	// q3q3q3 hl q4q4q4
 	// q3q3q3 hl q4q4q4
 	// q3q3q3 hl q4q4q4
-	if argleng > 1 {
-		fmt.Println("\n****************SNUMBER****************\n")
-		spacing := "                "
-		fmt.Println(spacing + qq2.l1 + hl + qq1.l1)
-		fmt.Println(spacing + qq2.l2 + hl + qq1.l2)
-		fmt.Println(spacing + qq2.l3 + hl + qq1.l3)
-		fmt.Println(spacing + qq2.l4 + hl + qq1.l4)
+	var retstr string
 
-		fmt.Println(spacing + hx)
-		fmt.Println(spacing + hx)
+	spacing := "                "
+	retstr = (spacing + qq2.l1 + hl + qq1.l1 + "\n")
+	retstr = (retstr + spacing + qq2.l2 + hl + qq1.l2 + "\n")
+	retstr = (retstr + spacing + qq2.l3 + hl + qq1.l3 + "\n")
+	retstr = (retstr + spacing + qq2.l4 + hl + qq1.l4 + "\n")
 
-		fmt.Println(spacing + qq3.l1 + hl + qq4.l1)
-		fmt.Println(spacing + qq3.l2 + hl + qq4.l2)
-		fmt.Println(spacing + qq3.l3 + hl + qq4.l3)
-		fmt.Println(spacing + qq3.l4 + hl + qq4.l4)
+	retstr = (retstr + spacing + hx + "\n")
+	retstr = (retstr + spacing + hx + "\n")
 
-		fmt.Println("\n**************************************\n")
+	retstr = (retstr + spacing + qq3.l1 + hl + qq4.l1 + "\n")
+	retstr = (retstr + spacing + qq3.l2 + hl + qq4.l2 + "\n")
+	retstr = (retstr + spacing + qq3.l3 + hl + qq4.l3 + "\n")
+	retstr = (retstr + spacing + qq3.l4 + hl + qq4.l4)
 
-	}
-	if argleng > 2 {
-		sarg := strings.Join(os.Args[2:3], "")
-
-		if sarg == "d" || sarg == "D" {
-			fmt.Println("\n\n*****", good, "t=", t, "number=", number, "n1000=", n1000, "n100=", n100, "n10=", n10, "n1=", n1)
-		}
-	}
+	return retstr
 }

@@ -104,49 +104,49 @@ func numbers(number int) string {
 	}
 	//Q4 Logic
 	switch {
-	case n1000 == "0":
+	case n100 == "0":
 		qq4 = q4zero
-	case n1000 == "1":
+	case n100 == "1":
 		qq4 = q4one
-	case n1000 == "2":
+	case n100 == "2":
 		qq4 = q4two
-	case n1000 == "3":
+	case n100 == "3":
 		qq4 = q4three
-	case n1000 == "4":
+	case n100 == "4":
 		qq4 = q4four
-	case n1000 == "5":
+	case n100 == "5":
 		qq4 = q4five
-	case n1000 == "6":
+	case n100 == "6":
 		qq4 = q4six
-	case n1000 == "7":
+	case n100 == "7":
 		qq4 = q4seven
-	case n1000 == "8":
+	case n100 == "8":
 		qq4 = q4eight
-	case n1000 == "9":
+	case n100 == "9":
 		qq4 = q4nine
 
 	}
 	//Q3 Logic
 	switch {
-	case n100 == "0":
+	case n1000 == "0":
 		qq3 = q3zero
-	case n100 == "1":
+	case n1000 == "1":
 		qq3 = q3one
-	case n100 == "2":
+	case n1000 == "2":
 		qq3 = q3two
-	case n100 == "3":
+	case n1000 == "3":
 		qq3 = q3three
-	case n100 == "4":
+	case n1000 == "4":
 		qq3 = q3four
-	case n10 == "5":
+	case n1000 == "5":
 		qq3 = q3five
-	case n100 == "6":
+	case n1000 == "6":
 		qq3 = q3six
-	case n100 == "7":
+	case n1000 == "7":
 		qq3 = q3seven
-	case n100 == "8":
+	case n1000 == "8":
 		qq3 = q3eight
-	case n100 == "9":
+	case n1000 == "9":
 		qq3 = q3nine
 
 	}

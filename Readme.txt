@@ -30,8 +30,3 @@ Step 5
 
 End product 
 	User inputs number > Outputs fused image base on corrisponding number. 
-
-
-Change of plans , STRING STRUCKS USING ASCHII CHARACTERS 
-
-####

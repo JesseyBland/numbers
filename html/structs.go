@@ -37,7 +37,7 @@ var (
 	q3one   = Quad{"   ", "   ", "   ", "###"}
 	q3two   = Quad{"###", "   ", "   ", "   "}
 	q3three = Quad{"#  ", " # ", "  #", "   "}
-	q3four  = Quad{"#  ", " # ", "  #", "   "}
+	q3four  = Quad{"   ", "  #", " # ", "#  "}
 	q3five  = Quad{"   ", "  #", " # ", "###"}
 	q3six   = Quad{"#  ", "#  ", "#  ", "#  "}
 	q3seven = Quad{"#  ", "#  ", "#  ", "###"}
@@ -47,7 +47,7 @@ var (
 	q4zero  = Quad{"   ", "   ", "   ", "   "}
 	q4one   = Quad{"   ", "   ", "   ", "###"}
 	q4two   = Quad{"###", "   ", "   ", "   "}
-	q4three = Quad{"   ", "#  ", " # ", "  #"}
+	q4three = Quad{"   ", "  #", " # ", "#  "}
 	q4four  = Quad{"   ", "#  ", " # ", "  #"}
 	q4five  = Quad{"   ", "#  ", " # ", "###"}
 	q4six   = Quad{"  #", "  #", "  #", "  #"}

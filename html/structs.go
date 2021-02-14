@@ -47,7 +47,7 @@ var (
 	q4zero  = Quad{"   ", "   ", "   ", "   "}
 	q4one   = Quad{"   ", "   ", "   ", "###"}
 	q4two   = Quad{"###", "   ", "   ", "   "}
-	q4three = Quad{"   ", "  #", " # ", "#  "}
+	q4three = Quad{"  #", " # ", "#  ", "   "}
 	q4four  = Quad{"   ", "#  ", " # ", "  #"}
 	q4five  = Quad{"   ", "#  ", " # ", "###"}
 	q4six   = Quad{"  #", "  #", "  #", "  #"}

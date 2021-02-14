@@ -161,7 +161,7 @@ func numbers(number int) string {
 	// q3q3q3 hl q4q4q4
 	var retstr string
 
-	spacing := "                "
+	spacing := ""
 	retstr = (spacing + qq2.l1 + hl + qq1.l1 + "\n")
 	retstr = (retstr + spacing + qq2.l2 + hl + qq1.l2 + "\n")
 	retstr = (retstr + spacing + qq2.l3 + hl + qq1.l3 + "\n")

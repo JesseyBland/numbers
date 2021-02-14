@@ -8,6 +8,12 @@ import (
 
 func cnumber(w http.ResponseWriter, req *http.Request) {
 	fmt.Fprintf(w, "Hello World!\n")
+	mybody := req.Body
+	buffer := make([]byte, 1024)
+	myint, _ := mybody.Read(buffer)
+	snum, _ := strconv.Atoi(string(buffer[:myint]))
+	resp := numbers(snum)
+	fmt.Fprintf(w, resp)
 }
 func headers(w http.ResponseWriter, req *http.Request) {
 	mybody := req.Body
@@ -36,5 +42,7 @@ func main() {
 	http.Handle("/", http.StripPrefix("/", fs))
 	http.HandleFunc("/cnumber", cnumber)
 	http.HandleFunc("/headers", headers)
+	fmt.Println("Listening on port: 9000")
 	http.ListenAndServe(":9000", nil)
+
 }
